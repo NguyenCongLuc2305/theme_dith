@@ -2,8 +2,8 @@
 // make some configs
 if(!function_exists('optione_configs')){
     function optione_configs($value){ 
-        $body_font    = '\'Geogrotesque\', sans-serif';
-        $heading_font = '\'Geogrotesque\', sans-serif';
+        $body_font    = '\'Montserrat\', sans-serif';
+        $heading_font = '\'Montserrat\', sans-serif';
           
         $configs = [
             'theme_colors' => [

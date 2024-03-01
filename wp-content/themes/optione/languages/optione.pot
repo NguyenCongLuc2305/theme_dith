@@ -2734,7 +2734,7 @@ msgid "Let's install some essential WordPress plugins to get you started."
 msgstr ""
 
 #: inc/theme-functions.php:250
-msgctxt "Geogrotesque font: on or off"
+msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr ""
 

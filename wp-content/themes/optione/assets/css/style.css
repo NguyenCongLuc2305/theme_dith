@@ -5986,7 +5986,7 @@ input, select, textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: "Geogrotesque", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 600;
   color: #ffffff;
@@ -6568,7 +6568,7 @@ a.logo-mobile {
         color: var(--heading-color);
         font-size: 16px;
         font-weight: 400;
-        font-family: "Geogrotesque", sans-serif;
+        font-family: "Montserrat", sans-serif;
         line-height: 35px;
         display: inline-block;
         position: relative; }
@@ -6692,7 +6692,7 @@ a.logo-mobile {
           font-size: 15px; }
         .pxl-primary-menu .sub-menu li a {
           display: block;
-          font-family: "Geogrotesque", sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-size: 14px;
           font-weight: 400;
           letter-spacing: 0.02em;
@@ -6821,7 +6821,7 @@ a.logo-mobile {
       font-size: 13px;
       font-weight: 400;
       background-color: transparent;
-      font-family: "Geogrotesque", sans-serif;
+      font-family: "Montserrat", sans-serif;
       text-transform: capitalize; }
   .pxl-mobile-menu .sub-menu .menu-item:hover, .pxl-mobile-menu .sub-menu .current-menu-item, .pxl-mobile-menu .sub-menu .current-menu-ancestor {
     color: var(--additional01-color); }

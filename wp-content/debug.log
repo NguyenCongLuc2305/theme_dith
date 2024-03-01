@@ -3056,3 +3056,34 @@
 [29-Feb-2024 18:44:54 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
 [29-Feb-2024 18:45:03 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
 [29-Feb-2024 18:45:20 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:27:01 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:27:02 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:37:16 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:37:16 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:40:10 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:40:11 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:41:04 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:41:05 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:41:11 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:41:15 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:41:17 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:41:17 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:41:32 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:41:32 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:41:33 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:41:34 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:41:46 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:41:50 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:41:50 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:41:51 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:41:51 UTC] PHP Warning:  chmod(): Operation not permitted in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[01-Mar-2024 01:41:55 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:42:03 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:42:05 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:42:11 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:42:20 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:42:27 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:42:30 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:42:31 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:42:35 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100
+[01-Mar-2024 01:44:35 UTC] PHP Notice:  Undefined index: email_support in /Applications/XAMPP/xamppfiles/htdocs/theme_dith/wp-content/themes/optione/inc/admin/libs/merlin/merlin-config.php on line 100

@@ -11,20 +11,19 @@
     }
 }
 
-
-//-------------------------------Body Geogrotesque--------------------------------
+//-------------------------------Body Montserrat--------------------------------
 @font-face {
-    font-family: 'Geogrotesque';
+    font-family: 'Montserrat';
     font-weight: normal;
     font-style: normal;
-    src: url('../fonts/font-face/GeogrotesqueSharpTRIAL-CompRg.otf') format('otf')
+    src: url('../fonts/font-face/MontserratSharpTRIAL-CompRg.otf') format('otf')
 
 }
 
 
 // Font family custom class
 .body-default-font{
-    font-family: 'Geogrotesque', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

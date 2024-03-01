@@ -1,0 +1,107 @@
+@keyframes lineheight {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+@keyframes lineround {
+    0% {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+        -o-transform: translateY(200%);
+        transform: translateY(200%);
+    }
+}
+@keyframes preloadedzero {
+    0% {
+        width: 50%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+#pxl-loadding { 
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99999;
+    @include d-flex();
+    align-items: center;
+    justify-content: center;
+    &.default{
+        background-color: $additional02_color;
+        .loader_line{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 3em;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            background-color: $primary_color;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 23px;
+                height: 23px;
+                margin: 0 0 0 -12px;
+                background-color: white;
+                top: 50%;
+                bottom: 0;
+                left: 50%;
+                transform-origin: 50% 0%;
+                border-radius: 50%;
+                animation: loader4 1s infinite linear;
+            }
+        }
+    }
+    &.content-image{
+        background-color: #fff;
+    }
+    
+
+}
+
+/*Hiding all*/
+.preloaded .loader_line:after {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloaded .loader_line {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloaded:before,
+.preloaded:after {
+    @include animation(preloadedzero 300ms ease-in-out 500ms forwards);
+}
+
+@keyframes circle2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader4 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

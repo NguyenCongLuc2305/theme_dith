@@ -1,0 +1,193 @@
+
+.pxl-nav-menu-mobile{
+	ul,ol{
+		list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    li{
+	    	position: relative;
+    		padding: 0;
+	    }
+	} 
+} 
+ 
+.pxl-mobile-menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+	> li{
+		color: $mobile_menu_regular;
+		position: relative;	
+		+ li{
+			border-top: 1px solid $divider_color;
+		}
+		>a{
+			padding: 16px 0;
+			color: $mobile_menu_regular;
+			font-size: $mobile_menu_font_size;
+			font-weight: $mobile_menu_font_weight;
+			display: inline-block;
+			text-transform: $mobile_menu_text_transform;
+			background-color: $mobile_menu_item_bg;
+		}
+	}
+	.menu-item:hover,
+	.menu-item:active,
+	.current-menu-item,
+	.current-menu-ancestor{
+		color: $mobile_menu_hover;
+		> a{
+			color: $mobile_menu_hover;
+			background-color: $mobile_menu_item_bg_hover;
+		}
+	}
+	.menu-item:active{
+		color: $mobile_menu_active;
+		> a{
+			color: $mobile_menu_active;
+			background-color: $mobile_menu_item_bg_hover;
+		}
+	}
+	.current-menu-parent{
+		.main-menu-toggle{
+			&:before{
+				content: "\f2f8";
+			}
+		}
+		.current-menu-item{
+			a{
+				color: $primary_color !important;
+			}
+		}
+	}
+	.sub-menu{
+		display: none;
+		list-style: none;
+		.menu-item{
+			color: $mobile_submenu_regular;
+			position: relative;
+			+ .menu-item{
+				border-top: 1px solid $divider_color;
+			}
+			>a{
+				padding: 12px 15px;
+				display: inline-block;
+				color: $mobile_submenu_regular;
+				font-size: $mobile_submenu_font_size;
+				font-weight: $mobile_submenu_font_weight;
+				background-color: $mobile_submenu_item_bg;
+				font-family: $mobile_submenu_font_family;
+				text-transform: $mobile_submenu_text_transform;
+			}
+		} 
+		.menu-item:hover,
+		.current-menu-item,
+		.current-menu-ancestor{
+			color: $mobile_submenu_hover;
+			> a{
+				color: $mobile_submenu_hover;
+				background-color: $mobile_submenu_item_bg_hover;
+			}
+		} 
+		.menu-item:active{
+			color: $mobile_submenu_active;
+			> a{
+				color: $mobile_submenu_active;
+				background-color: $mobile_submenu_item_bg_hover;
+			}
+		}
+		.pxl-heading-wrap{
+			display: none;
+		}
+		.elementor-column, 
+		.elementor-column{
+			width: 100% !important;
+			margin-bottom: 15px;
+		}
+		.elementor .elementor-section.elementor-section-boxed > .elementor-container.elementor-column-gap-default > .elementor-column > .elementor-element-populated{
+			padding: 0;
+		}
+		.elementor-section .pxl-nav-menu-inner .pxl-nav-inner li{
+			padding: 0;
+		}
+	}
+	.main-menu-toggle {
+        cursor: pointer;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+        position: absolute;
+        right: -6px;
+        text-align: center;
+        top: 14px;
+        background-color: $primary_color;
+        @include border-radius(50%);
+        @include transition(all 300ms linear 0ms);
+        &:before {
+			content: "\f2f2";
+			font-family: "Material-Design-Iconic-Font";
+			font-size: 25px;
+			color: #fff;
+        }
+		&.open:before{
+			content: "\f2f8";
+	    }
+    }
+    .sub-menu{
+    	.main-menu-toggle {
+    		top: 9px;
+    	}
+    }
+}
+
+.pxl-anchor-icon.custom{
+	display: inline-block;
+	height: 21px;
+	width: 22px;
+	cursor: pointer;
+	position: relative;
+	vertical-align: middle;
+	@include transition(all 300ms linear 0ms);
+	&:before, &:after, span {
+		@include transition(all 300ms linear 0ms);
+		content: "";
+		background-color: $heading_color;
+		display: block;
+		height: 3px;
+		left: 0;
+		right: 0;
+		border-radius: 10px;
+		.header-transparent &{
+			background-color: #fff;
+		}
+            // sticky
+            .header-sticky &{
+            	background-color: $heading_color;
+            }
+        }
+        &:hover{
+        	&:before, &:after, span {
+        		background-color: $primary_color;
+        	}
+        }
+
+        span {
+        	margin: 5px 0;
+        }
+        
+        &.opened{
+        	&:before {
+        		top: 8px;
+        		@include transform(rotate(45deg));
+        	}
+        	&:after {
+        		@include transform(rotate(-45deg));
+        		top: 8px;
+        	}
+        	span{
+        		display: none;
+        	}
+        }
+    }

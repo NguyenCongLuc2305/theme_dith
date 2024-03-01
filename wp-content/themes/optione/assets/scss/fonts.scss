@@ -1,0 +1,31 @@
+// Add Font Face
+//-------------------------------Heading Google Font--------------------------------
+.heading-default-font{
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $heading_font_family;
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: $heading_font_family;
+    }
+}
+
+
+//-------------------------------Body Geogrotesque--------------------------------
+@font-face {
+    font-family: 'Geogrotesque';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/font-face/GeogrotesqueSharpTRIAL-CompRg.otf') format('otf')
+
+}
+
+
+// Font family custom class
+.body-default-font{
+    font-family: 'Geogrotesque', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

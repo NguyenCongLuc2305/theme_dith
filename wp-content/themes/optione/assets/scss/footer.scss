@@ -1,0 +1,130 @@
+.pxl-scroll-top {
+	position: fixed;
+	z-index: 99;
+	bottom: 24px;
+	right: 30px;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+    background-color: $white;
+	opacity: 0;
+	visibility: hidden;
+	box-shadow: 0 0 20px rgba(23,23,23,.25);
+	i{
+		font-size: 20px;
+		color: #fff;
+	}
+	&:hover, &:focus, &:active {
+		i{
+			@include animation(toTopFromBottom .3s forwards);
+		}
+	}
+
+	&.on {
+		bottom: 44px;
+		opacity: 1;
+		visibility: visible;
+	}
+	&:before{
+		content: "\f062";
+		font-family: "Font Awesome 5 Free"; 
+		font-weight: 900; 
+		position: absolute;
+		left: 50%;
+		top: 50%;   
+		transform: translate(-50%,-50%);
+		transition: .2s;
+		color: $secondary_color;
+	}
+	.pxl-progress-circle path {
+		fill: none;
+		stroke: $secondary_color;
+		stroke-width: 4;
+		box-sizing: border-box;
+		transition: all 200ms linear;
+	}
+
+}
+
+.pxl-footer.scroll-off:after{display: none;}
+ 
+.pxl-footer{
+	color: #EDF0FF;
+    .pxl-heading-wrap{
+        .heading-title{
+            color: $white;
+        }
+        h4{
+            font-size: 24px;
+        }
+    }
+	.elementor-widget-text-editor{
+		color: #b6b6b6;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+.pxl-footer-fixed {
+	#pxl-footer.footer-type-el {
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		@media (max-width: $lg_max){
+			position: static;
+		}
+	}
+	#header-type-el {
+		background-color: #fff;
+	}
+	#pxl-main {
+		background-color: #fff;
+		@media (max-width: $lg_max){
+			margin-bottom: 0 !important;
+		}
+	}
+}
+
+/* Default Footer */
+.pxl-footer-bottom{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: $secondary_color;
+	color: #DBE6EE;
+	font-weight: 400;
+	font-size: 15px;
+}
+ 
+.pxl-copyright-text{
+	a{
+		color: #DBE6EE;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 1px;
+			background: $white;
+			bottom: 0;
+			left: 0;
+			@include transition(all .3s);
+		}
+		&:hover{
+			color: $white;
+			&:before{
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 575px){
+	.elementor-widget-icon-list .elementor-icon-list-item .elementor-icon-list-icon .fa-square-full {
+		margin-top: 5px;
+	}
+}

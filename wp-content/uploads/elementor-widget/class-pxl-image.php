@@ -1,0 +1,11 @@
+<?php
+
+class PxlImage_Widget extends Pxltheme_Core_Widget_Base{
+    protected $name = 'pxl_image';
+    protected $title = 'PXL Image';
+    protected $icon = 'eicon-image';
+    protected $categories = array( 'pxltheme-core' );
+    protected $params = '{"sections":[{"name":"content_section","label":"Content","tab":"content","controls":[{"name":"image","label":"Image","type":"media"},{"name":"image_size","label":"Image Size","type":"text","description":"Enter image size (Example: &quot;thumbnail&quot;, &quot;medium&quot;, &quot;large&quot;, &quot;full&quot; or other sizes defined by theme). Alternatively enter size in pixels (Default: 370x300 (Width x Height))."},{"name":"image_max_width","label":"Max Width","type":"slider","description":"Enter number.","size_units":["px","%"],"range":{"px":{"min":0,"max":3000},"%":{"min":0,"max":100}},"control_type":"responsive","selectors":{"{{WRAPPER}} .pxl-image img":"max-width: {{SIZE}}{{UNIT}};"}},{"name":"image_align","label":"Alignment","type":"choose","control_type":"responsive","options":{"start":{"title":"Start","icon":"eicon-text-align-left"},"center":{"title":"Center","icon":"eicon-text-align-center"},"end":{"title":"End","icon":"eicon-text-align-right"}},"selectors":{"{{WRAPPER}} .pxl-image":"justify-content: {{VALUE}};"}},{"name":"image_link","label":"Link","type":"url"}]},{"name":"setting_section","label":"Setting Options","tab":"content","controls":[{"name":"show_parallax","label":"Image Parallax","type":"switcher","default":"false"},{"name":"direction_parallax","label":"Parallax Direction","type":"select","default":"x","options":{"x":"Vertical","y":"Horizontal"},"condition":{"show_parallax":"true"}},{"name":"animation_paralax","label":"Animation Parallax","type":"number","default":50,"condition":{"show_parallax":"true"}},{"name":"remove_animation","label":"Remove Parallax On Mobile","type":"select","default":"remove-parallax-none","options":{"remove-parallax-none":"Default","remove-parallax-true":"Remove True"},"condition":{"show_parallax":"true"}},{"name":"direction_tilt","label":"Image Parallax Hover Tilt","type":"select","default":"pxl-none","options":{"pxl-none":"None","pxl-image-tilt":"Tilt"}}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array( 'optione-gsap','optione-parallax','tilt' );
+}

@@ -1,0 +1,56 @@
+-----------------------------------------------------------------------------------------
+Version 1.0.7 - 30 January, 2024
+-----------------------------------------------------------------------------------------
+- FIXED: Remove e_dom_optimization in section from inc/elementor/elements/section.php extend "/plugins/elementor/includes/elements/section.php"
+- FIXED: Elementor e_dom_optimization in column from inc/elementor/elements/column.php extend "/plugins/elementor/includes/elements/column.php"
+
+-----------------------------------------------------------------------------------------
+Version 1.0.6 - 01 January, 2024
+-----------------------------------------------------------------------------------------
+- FIXED: experiments is_feature_active of e_font_icon_svg (hard set inactive)
+- function add_meta_boxes: //class-post-metabox.php
+- update scss new libs
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.5 - 9 September, 2023
+-----------------------------------------------------------------------------------------
+- ADD TO: field_pxl_iconpicker.php : wp_enqueue_script( 'redux-field-select-js' ... replace $this->timestamp -> time()
+- ADD: filter for pxl_megamenu_content_render
+- ADD: redux field pxl_auto_generate
+- ADD: redux field heading
+- ADD: redux field pxl_repeater
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.4 - 30 January, 2023
+-----------------------------------------------------------------------------------------
+- UPDATE: Font Awesome pro 6.0.0
+- UPDATE: One page menu js
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.3 - 30 January, 2023
+-----------------------------------------------------------------------------------------
+- UPDATE: Auto update plugin
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.2 - 16 January, 2023
+-----------------------------------------------------------------------------------------
+- FIXED: Menu item page popup show at frontend
+- FIXED: Get icon font (el control, mega menu, redux pxl_iconpicker)
+- UPDATE: Download demo data stop when existing
+- UPDATE: Replace custom menu url when import demo data
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.1 - 11 January, 2023
+-----------------------------------------------------------------------------------------
+- FIXED: Notice PHP 8.0
+
+
+-----------------------------------------------------------------------------------------
+Version 1.0.0 - 11 September, 2022
+-----------------------------------------------------------------------------------------
+- Initial release

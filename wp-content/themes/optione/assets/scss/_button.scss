@@ -1,0 +1,221 @@
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    vertical-align: bottom;
+    &:hover,
+    &:active,
+    &:focus {
+        cursor: pointer;
+    }
+
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: none;
+        outline-offset: 0;
+    }
+}
+
+  
+.btn,
+button,
+.button,
+input[type="submit"],
+input[type="button"],
+.added_to_cart,
+.btn{
+    position: relative;
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    font-family: $button_font_family;
+    font-size: $button_font_size;
+    font-weight: $button_font_weight;
+    color: $button_color;
+    line-height: $button_line_height;
+    padding: $button_padding;
+    background-color: $button_bg_color;
+    outline: none;
+    cursor: pointer;
+    vertical-align: top;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    @include box-shadow(none);
+    @include border-radius($button_radius);
+    @include transition(all 300ms ease 0ms);
+    .pxl-button-icon{
+        top: -1px;
+    }
+    span{
+        position: relative;
+        z-index: 3;
+        @include transition(all 200ms ease 0ms);
+    }
+    
+    &:active,&:hover, &:focus {
+        color: $button_color_hover;
+        outline: medium none;
+        text-decoration: none;
+    }
+    &.btn-outline {
+        border: 2px solid $primary_color;
+        background-color: transparent;
+        color: $primary_color;
+        &:before{
+            background-color: $primary_color !important;
+        }
+        &:hover{
+            border-color: $secondary_color !important;
+        }
+    }
+    &.btn-primary {
+        background-color: $primary_color;
+        border-color: $primary_color;
+        color: #fff;
+        border-radius: 100px;
+        position: relative;
+        @include transition(all 300ms ease 0ms);
+       
+    }
+    &.btn-secondary{
+        background-color: $primary_color; 
+        border-color: $primary_color;
+        color: #fff;
+        &:before{
+            background-color: $primary_color;
+        }
+    }
+    &.btn-white{
+        &:before{
+            background-color: $primary_color !important;
+        }
+    }
+
+    &.btn-fullwidth {
+        width: 100%;
+        text-align: center;
+        justify-content:center;
+        &:before{
+            height: 100% !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            transform: none !important;
+            opacity: 0;
+        }
+        &:hover{
+            &:before{
+                opacity: 1;
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        width: 100%;
+    } 
+}
+
+//* Button More
+.btn-readmore{
+    font-family: $heading_font_family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.23;
+    letter-spacing: 0.5px;
+    color: $primary_color;    
+    span{
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            background-color: $primary_color;
+            width: 0;
+            height: 1px;
+            bottom: 0;
+            left:0;
+            font-size: 18px;
+            @include transition(all .3s ease);
+        } 
+    }
+
+    &:after{
+        content: "\e90e";
+        color: $primary_color;
+        font-size: 10px;
+        font-family: 'pxli';
+        @include transition(all .3s ease);
+        display: inline-block;
+        margin-left: 6px;
+    }
+    &:hover{
+        span{
+            &:before{
+                width: 100%;
+            }
+        }
+        &:after{
+            opacity: 0;
+           @include transform(translateX(25px));
+        }
+    }
+}
+input[type="submit"],
+input[type="button"],
+.btn,
+.rs-layer.btn,
+.pxl-button-wrapper .btn,
+.pxl-button-wrapper button,
+.pxl-button-wrapper .button,
+.comment-form button{
+    &:hover {
+        // transform: scale(0.9);
+    }
+}
+
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.item-readmore .btn{
+    i{
+        font-size: 17px;
+        line-height: 1;
+        font-weight: normal;
+        margin-left: 5px;
+        transition: all 300ms ease;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.btn-icon{
+    @include d-inline-flex();
+    width: 50px;
+    height: 50px;
+    background-color: $primary_color;
+    align-items: center;
+    justify-content: center;
+    i{
+        font-size: 21px;
+        font-weight: normal;
+        transition: all 300ms ease;
+        color: #fff;
+    }
+    &:hover{
+        i{
+            @include animation( toRightFromLeft .3s forwards);
+        }
+    }
+}
+

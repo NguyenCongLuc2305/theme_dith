@@ -1,0 +1,11 @@
+<?php
+
+class PxlTextList_Widget extends Pxltheme_Core_Widget_Base{
+    protected $name = 'pxl_text_list';
+    protected $title = 'PXL Text List';
+    protected $icon = ' eicon-editor-list-ul';
+    protected $categories = array( 'pxltheme-core' );
+    protected $params = '{"sections":[{"name":"layout_section","label":"Layout","tab":"layout","controls":[{"name":"layout","label":"Layout","type":"layoutcontrol","default":"1","options":{"1":{"label":"Layout 1","image":"http:\/\/localhost\/theme_dith\/wp-content\/themes\/optione\/elements\/assets\/layout-image\/pxl_text_list-1.jpg"},"2":{"label":"Layout 1","image":"http:\/\/localhost\/theme_dith\/wp-content\/themes\/optione\/elements\/assets\/layout-image\/pxl_text_list-2.jpg"}},"prefix_class":"pxl-text-list-layout-"}]},{"name":"section_list","label":"Content","tab":"content","controls":[{"name":"content_list","label":"Testimonial Items","type":"repeater","default":[],"controls":[{"name":"title","label":"Title","type":"text","label_block":true},{"name":"description","label":"Description","type":"textarea","rows":10}],"title_field":"{{{ title }}}"}]},{"name":"style_section","label":"Style","tab":"content","controls":[{"name":"text_align","label":"Layout","type":"choose","control_type":"responsive","options":{"style-flex":{"title":"Flex","icon":"eicon-ellipsis-h"},"style-grid":{"title":"Grid","icon":"eicon-editor-list-ul"}}},{"name":"margin","label":"Margin Left","type":"slider","control_type":"responsive","range":{"px":{"min":0,"max":100}},"selectors":{"{{WRAPPER}} .pxl-text-list .item-inner":"margin-left: {{SIZE}}{{UNIT}} !important;"},"condition":{"text_align":"style-flex"}},{"name":"max_width","label":"Max Width Description(px)","type":"slider","control_type":"responsive","range":{"px":{"min":100,"max":1920}},"selectors":{"{{WRAPPER}} .pxl-text-list .item-inner":"max-width: {{SIZE}}{{UNIT}};"},"condition":{"layout!":["1"]}},{"name":"title_color","label":"Title Color","type":"color","selectors":{"{{WRAPPER}} .pxl-text-list-content .item-title":"color: {{VALUE}} !important;"}},{"name":"description_color","label":"Description Color","type":"color","selectors":{"{{WRAPPER}} .pxl-text-list-content .item-desc":"color: {{VALUE}} !important;"}}]}]}';
+    protected $styles = array(  );
+    protected $scripts = array( 'swiper','optione-swiper' );
+}

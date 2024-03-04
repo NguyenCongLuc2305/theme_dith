@@ -4,26 +4,7 @@ extract($settings);
 if(count($tabs_list) > 0){
 	$tab_bd_ids = [];
     ?>
-    <div class="pxl-tabs <?php echo esc_attr($template) ?>">
-        <div class="tabs-title">
-            <?php foreach ($tabs_list as $key => $tab) :
-                $title_key = $widget->get_repeater_setting_key( 'tab_title', 'tabs_list', $key );
-                $tabs_title[$title_key] = $tab['tab_title'];
-                $widget->add_inline_editing_attributes( $title_key, 'basic' );
-                $widget->add_render_attribute( $title_key, [
-                    'class' => [ 'tab-title' ],
-                    'data-target' => '#' . $element_id.'-'.$tab['_id'],
-                ] );
-                if($active_tab == $key + 1){
-                    $widget->add_render_attribute( $title_key, 'class', 'active');
-                }
-                ?>
-                <span <?php pxl_print_html($widget->get_render_attribute_string( $title_key )); ?>>
-                    <span><?php echo pxl_print_html($tab['tab_title']); ?></span>
-                </span>
-            <?php endforeach; ?>
-        </div>
-
+    <div class="pxl-tabs">
         <div class="tabs-content">
             <?php foreach ($tabs_list as $key => $tab):
                 $content_key = $widget->get_repeater_setting_key( 'tab_content', 'tabs_list', $key );
@@ -49,6 +30,40 @@ if(count($tabs_list) > 0){
                 }
                 ?>
                 <div <?php pxl_print_html($widget->get_render_attribute_string( $content_key )); ?>><?php pxl_print_html($tabs_content); ?></div>
+            <?php endforeach; ?>
+        </div>
+        <div class="tabs-title">
+            <?php foreach ($tabs_list as $key => $tab) :
+                $title_key = $widget->get_repeater_setting_key( 'tab_title', 'tabs_list', $key );
+                $tabs_title[$title_key] = $tab['tab_title'];
+                $widget->add_inline_editing_attributes( $title_key, 'basic' );
+                $widget->add_render_attribute( $title_key, [
+                    'class' => [ 'tab-title' ],
+                    'data-target' => '#' . $element_id.'-'.$tab['_id'],
+                ] );
+                if($active_tab == $key + 1){
+                    $widget->add_render_attribute( $title_key, 'class', 'active');
+                }
+                $image    = isset($tab['image']) ? $tab['image'] : [];
+                $thumbnail = '';
+                if(!empty($image)) {
+        			$img = pxl_get_image_by_size( array(
+                        'attach_id'  => $image['id'],
+                        'thumb_size' => '150x150',
+                        'class' => 'no-lazyload',
+                    ));
+                    $thumbnail = $img['thumbnail'];
+                }
+
+                ?>
+                <span <?php pxl_print_html($widget->get_render_attribute_string( $title_key )); ?>>
+                    <span><?php echo pxl_print_html($tab['tab_title']); ?></span>
+                </span>
+                <?php if(!empty($thumbnail)) { ?>
+                            <div class="item-image">
+                                <?php echo wp_kses_post($thumbnail); ?> 
+                            </div>
+                <?php } ?>
             <?php endforeach; ?>
         </div>
     </div>

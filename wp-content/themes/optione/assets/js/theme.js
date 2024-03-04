@@ -243,22 +243,22 @@
 
     /// header sticky up down Header will show when scrolling up and hide when scrolling down.
 
-        $('.header-sticky-up-down .pxl-header-sticky').addClass("pxl-header-sticky-up-down");
-        $('.header-sticky-up-down .pxl-header-sticky-up-down').removeClass("pxl-header-sticky");
+        // $('.header-sticky-up-down .pxl-header-sticky').addClass("pxl-header-sticky-up-down");
+        // $('.header-sticky-up-down .pxl-header-sticky-up-down').removeClass("pxl-header-sticky");
 
-        if($('div').hasClass('pxl-header-sticky-up-down')){    
-            var topHeader = document.querySelector(".pxl-header-sticky-up-down");
-            let lastScrollPosition = 0;
-            window.addEventListener('scroll', () => {
-                const currentScrollPosition = window.scrollY;
-                if (currentScrollPosition > lastScrollPosition || currentScrollPosition < 100) {
-                    topHeader.classList.remove('h-fixed');
-                } else {
-                    topHeader.classList.add('h-fixed');
-                }
-                lastScrollPosition = currentScrollPosition;
-            });
-        }
+        // if($('div').hasClass('pxl-header-sticky-up-down')){    
+        //     var topHeader = document.querySelector(".pxl-header-sticky-up-down");
+        //     let lastScrollPosition = 0;
+        //     window.addEventListener('scroll', () => {
+        //         const currentScrollPosition = window.scrollY;
+        //         if (currentScrollPosition > lastScrollPosition || currentScrollPosition < 100) {
+        //             topHeader.classList.remove('h-fixed');
+        //         } else {
+        //             topHeader.classList.add('h-fixed');
+        //         }
+        //         lastScrollPosition = currentScrollPosition;
+        //     });
+        // }
 
     function optione_set_height() {
 

@@ -35,19 +35,7 @@ pxl_add_custom_widget(
                     'name'     => 'content_section',
                     'label'    => esc_html__( 'Content', 'optione' ),
                     'tab'      => 'content',
-                    'controls' => array(
-                        array(
-                            'name' => 'template',
-                            'label' => esc_html__('Select Style', 'optione'),
-                            'type' => 'select',
-                            'options' => [
-                                'style-1' => esc_html__( 'Style 1', 'optione' ),
-                                'style-2' => esc_html__( 'Style 2', 'optione' ),
-                                'style-3' => esc_html__( 'Style 3', 'optione' )
-                            ],
-                            'default' => 'style-1' 
-                        ),
-                        
+                    'controls' => array(                  
                         array(
                             'name' => 'active_tab',
                             'label' => esc_html__( 'Active Tab', 'optione' ),
@@ -65,6 +53,11 @@ pxl_add_custom_widget(
                                     'label' => esc_html__('Title', 'optione'),
                                     'type' => \Elementor\Controls_Manager::TEXT,
                                     'label_block' => true,
+                                ),
+                                array(
+                                    'name' => 'image',
+                                    'label' => esc_html__('Image', 'optione' ),
+                                    'type' => \Elementor\Controls_Manager::MEDIA,
                                 ),
                                 array(
                                     'name' => 'content_type',

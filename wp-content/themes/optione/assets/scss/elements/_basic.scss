@@ -1256,8 +1256,10 @@
 
 //* Tab
 .pxl-tabs{
+    position: relative;
     .tabs-content{
         position: relative;
+        overflow: hidden;
         .tab-content{
             display: none;
             opacity: 0;
@@ -1271,6 +1273,41 @@
         @include d-flex();
         align-items: center;
         justify-content: center;
+        position: absolute;
+        justify-content: center;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        .tab-title {
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            margin-top: 6px;
+            + .tab-title{
+                margin-left: 30px;
+            } 
+            span{
+                position: absolute;
+                bottom: -50px;
+                left: 0;
+                right: 0;
+                display: inline-block;
+                padding: 9px 15px;
+                margin: 0;
+                background-color: rgba(0, 0, 0, 0.75);
+                text-align: center;
+                color: #fff;
+                font-size: 13px;
+                -webkit-transition: all ease-in-out .25s;
+                -moz-transition: all ease-in-out .25s;
+                transition: all ease-in-out .25s; 
+            }
+            &:hover, &.active{
+                span{
+                    bottom: 0;
+                }
+            }
+        }
     }
     &.style-1{
         border: 1px solid $divider_color;
@@ -2372,4 +2409,49 @@
     display: inline-block;
     font-size: 16px;
     font-weight: 400;
+}
+
+
+.breadcrumb_company2 .br-divider::before{
+    content: "» Activities »" !important;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.map-list-block {
+    padding: 20px;
+}
+.map-list-block ul {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.map-list-block ul li {
+    display: inline-block;
+    width: 100%;
+    padding: 3px 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.pxl_table_2column tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+.pxl_table_2column tr {
+    min-height: 48px;
+}
+.pxl_table_2column tr td {
+    padding: 12px;
+    border-right: 1px solid #fff;
+    text-align: center;
+}
+.pxl_table_2column tr td:last-child {
+    border-right: 0 none;
+}
+.pxl_table_2column tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
 }

@@ -56,14 +56,15 @@ if(count($tabs_list) > 0){
                 }
 
                 ?>
-                <span <?php pxl_print_html($widget->get_render_attribute_string( $title_key )); ?>>
+                <div <?php pxl_print_html($widget->get_render_attribute_string( $title_key )); ?>>
+                    <?php if(!empty($thumbnail)) { ?>
+                                <div class="item-image">
+                                    <?php echo wp_kses_post($thumbnail); ?> 
+                                </div>
+                    <?php } ?>
                     <span><?php echo pxl_print_html($tab['tab_title']); ?></span>
-                </span>
-                <?php if(!empty($thumbnail)) { ?>
-                            <div class="item-image">
-                                <?php echo wp_kses_post($thumbnail); ?> 
-                            </div>
-                <?php } ?>
+                </div>
+                
             <?php endforeach; ?>
         </div>
     </div>
